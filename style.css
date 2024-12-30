@@ -1,0 +1,74 @@
+body {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image:url(bgv.gif);
+    overflow: hidden;
+}
+
+h1{
+    color: red;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 270px;
+    height: 360px;
+    background-image: url(scree.png);
+    background-size: cover;
+    background-position: 97%;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-alignment: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.cover {
+    top: 0;
+    position: absolute;
+    background-color: #4158D0;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book:hover .cover {
+    transition: all 0.5s;
+    transform: rotatey(-95deg);
+    -ms-transform: rotatey(-95deg);
+    -webkit-transform: rotatey(-95deg);
+    
+}
